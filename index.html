@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <form action="" name="calc">
+        <div class="calcu">
+         <div class="container"> 
+            <input type="text" name="display" id="result" placeholder="0" style="width: 310px; height: 70px  ;" >
+            <br>
+            <input type="button" id="btn" value="7" onclick="displayValue(7)"></input>
+            <input type="button" id="btn" value="8" onclick="displayValue(8)"></input>
+            <input type="button"  id="btn" value="9" onclick="displayValue(9)"></input>
+            
+            <input type="button" id="btn" value="+"  style="background-color: darkgrey;"onclick="displayValue(`+`)"></input><br>
+            <input type="button" id="btn" value="4" onclick="displayValue(4)"></input>
+                <input type="button" id="btn" value="5" onclick="displayValue(5)"></input>
+                <input type="button" id="btn" value="6" onclick="displayValue(6)"></input>
+                
+                <input type="button" id="btn" value="-" style="background-color: darkgrey;" onclick="displayValue(`-`)"></input>
+                <br>
+                <input type="button" id="btn" value="1" onclick="displayValue(1)"></input>
+                <input type="button" id="btn" value="2" onclick="displayValue(2)"></input>
+                <input type="button" id="btn" value="3" onclick="displayValue(3)"></input>
+                
+                <input type="button" id="btn" value="*"  style="background-color: darkgrey;" onclick="displayValue(`*`)"></input>
+                <br>
+                <input type="button" id="btn" value="0" onclick="displayValue(0)"></input>
+                <input type="button" id="btn" value="CLR" style="background-color: coral;" onclick="clearBox()"></input>
+                <input type="button" id="btn" value="=" style="background-color: coral" onclick="evaluateExpression()"></input>
+                <input type="button" id="btn" value="/"  style="background-color: darkgrey;"onclick="displayValue(`/`)"></input>
+                <br>
+                <input type="button" id="btn" value="DEL" style="background-color: darksalmon;" onclick="delNum()"></input>
+                <input type="button" id="btn" value="." onclick="displayValue(`.`)"></input>
+                <input type="button" id="btn" value="%"onclick="displayValue(`%`)"></input>
+                <input type="button" id="btn" value="^" onclick="displayValue(`^`)"></input>
+                <br>
+        </div> 
+    </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
